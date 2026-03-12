@@ -103,11 +103,11 @@
     <h1>라이어 게임</h1>
 
     <div id="startScreen">
-      <p>닉네임을 입력하고 결과를 확인하세요.</p>
-      <input type="text" id="nickname" placeholder="닉네임 입력" />
+      <p>학번을 입력하고 결과를 확인하세요.</p>
+      <input type="text" id="nickname" placeholder="학번 입력" />
       <button class="primary" id="startBtn">결과 확인하기</button>
       <div class="error" id="errorMsg"></div>
-      <p class="info">한 번 배정된 닉네임은 같은 결과가 다시 표시됩니다.</p>
+      <p class="info">한 번 배정된 학번은 같은 결과가 다시 표시됩니다.</p>
     </div>
 
     <div id="resultScreen" class="hidden">
@@ -124,7 +124,7 @@
 
   <script>
     // 여기에 Apps Script 웹앱 URL 넣기
-    const API_URL = '여기에_앱스스크립트_웹앱_URL을_넣으세요';
+    const API_URL = 'https://script.google.com/a/macros/goedu.kr/s/AKfycbx_kEXUXwzhD8qW-Hc7tRlRNj0WWLoHE-QVImmBODswK8ay_EQtLiw97GIrGgKv-XQe1A/exec';
 
     const startScreen = document.getElementById('startScreen');
     const resultScreen = document.getElementById('resultScreen');
@@ -146,7 +146,7 @@
       errorMsg.textContent = '';
 
       if (!nickname) {
-        errorMsg.textContent = '닉네임을 입력하세요.';
+        errorMsg.textContent = '학번을 입력하세요.';
         return;
       }
 
